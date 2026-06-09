@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1781013299.5629 "/home/satyam/my_cv/main.tex" "main.pdf" "main" 1781013300.18456 0
+["pdflatex"] 1781013462.14894 "/home/satyam/my_cv/main.tex" "main.pdf" "main" 1781013462.78882 0
   "/home/satyam/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1780497330.70108 75988 b7c1119d9590614bd3dae24024017b8f ""
   "/home/satyam/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1776659478.2643 11548 dfe0e7cf8d591128ab45f8847a935c7e ""
   "/home/satyam/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1779700778.75671 10149492 017d492fdcb40092833c952daaa7ffe8 ""
@@ -64,10 +64,10 @@
   "/home/satyam/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty" 1780062727.5978 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "/home/satyam/.miktex/texmfs/install/tex/latex/url/url.sty" 1776358536.67892 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/satyam/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1776358541.11409 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "/home/satyam/my_cv/main.tex" 1781013405.56105 8242 681f31c7fca74adf06caeee30dcad39d ""
-  "main.aux" 1781013300.04747 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "main.out" 1781013300.01547 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1781013405.56105 8242 681f31c7fca74adf06caeee30dcad39d ""
+  "/home/satyam/my_cv/main.tex" 1781013461.60457 8559 ed0745b2a3a326cca3c12b7ab60742ff ""
+  "main.aux" 1781013462.62457 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "main.out" 1781013462.59257 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1781013461.60457 8559 ed0745b2a3a326cca3c12b7ab60742ff ""
   (generated)
   "main.aux"
   "main.log"
