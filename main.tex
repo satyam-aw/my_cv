@@ -125,36 +125,44 @@ Created inertial tracking methods to decode architectural hand stroke motions in
 \section*{Agentic Architectures, Sequential Decision Models, and Applied ML}
 
 \noindent
-\textbf{JitterNot} \\
-\textit{An LSTM-based Model Predictive Controller for Adaptive Video Streaming}
-\begin{itemize}
-    \item Developed an LSTM network for real-time throughput prediction, simplifying the closed-loop control system from MISO to SISO.
-    \item Implemented an MPC controller leveraging Receding Horizon Control (RHC) principles to dynamically calculate optimal video resolution.
-\end{itemize}
-
-\noindent
-\textbf{In Motion — HAR using DeepConvLSTM} \\
-\textit{Distributed Mobile Computing System for Human Activity Recognition}
-\begin{itemize}
-    \item Designed a client-server telemetry pipeline streaming high-frequency accelerometer and gyroscope data for rolling window inference.
-    \item Implemented a DeepConvLSTM core architecture to model spatial-temporal features using TimeDistributed CNN layers.
-\end{itemize}
-
-\noindent
-\textbf{Autonomous Ground Vehicle \& Swarm Robotics} \\
-\textit{End-to-End Perception and Planning for Robotic Fleets}
+\textbf{Autonomous Ground Vehicle \& Swarm Robotics} \hfill IIT Kharagpur \\
+\textit{End-to-End Perception, Planning, and Multi-Agent Navigation Stack}
 \begin{itemize}
     \item Built an autonomous navigation stack in ROS, fusing heterogeneous sensor streams (LiDAR, IMU, GPS) via an Extended Kalman Filter (EKF).
-    \item Implemented visual obstacle segmentation networks (SegNet/U-Net) along with global ($A^*$/Dijkstra) and local (DWA) path planners.
+    \item Implemented visual obstacle segmentation networks (U-Net) along with global ($A^*$/Dijkstra) and local (DWA) path planners.
     \item Researched decentralized swarm coordination using peer-to-peer relative pose estimation (AprilTags) over an ad-hoc XBee mesh network.
 \end{itemize}
 
 \noindent
-\textbf{CohesiveAR} \\
-\textit{Augmented Reality Framework for Texture Extraction and Homography Space Mapping}
+\textbf{JitterNot} \hfill UCSB \\
+\textit{LSTM-Based Model Predictive Controller for Adaptive Video Streaming}
 \begin{itemize}
-    \item Engineered an asset ingestion pipeline using Google ARCore and OpenCV to project 3D world coordinates into 2D display space.
-    \item Implemented perspective wrap and homography transformations to rectify camera tilt skew into standardized orthogonal textures.
+    \item Developed an LSTM network for real-time throughput prediction, transforming the closed-loop control system from MISO to SISO.
+    \item Implemented an MPC controller leveraging Receding Horizon Control (RHC) principles to dynamically calculate optimal video resolution.
+\end{itemize}
+
+\noindent
+\textbf{CohesiveAR} \hfill UCSB \\
+\textit{Augmented Reality Pipeline for Texture Extraction and Homography Mapping}
+\begin{itemize}
+    \item Engineered an asset ingestion pipeline using Google ARCore and OpenCV to project 3D world coordinates into 2D display spaces.
+    \item Implemented perspective warp and homography transformations to rectify camera tilt skew into standardized orthogonal textures.
+\end{itemize}
+
+\noindent
+\textbf{In Motion — HAR using DeepConvLSTM} \hfill IIT Kharagpur \\
+\textit{Distributed Mobile Computing System for Human Activity Recognition}
+\begin{itemize}
+    \item Designed a client-server telemetry pipeline streaming high-frequency IMU sensor arrays for rolling window inference.
+    \item Implemented a DeepConvLSTM core architecture using TimeDistributed CNN layers to model spatial-temporal features efficiently.
+\end{itemize}
+
+\noindent
+\textbf{Tweeter: Distributed Infrastructure Testbed} \hfill UCSB \\
+\textit{High-Concurrency Microblogging Testbed on AWS EC2 Clusters}
+\begin{itemize}
+    \item Conducted high-throughput load testing up to 512 users/sec, mapping user trajectories as state machines to latency scaling curves.
+    \item Optimized read throughput by deploying nested fragment caches and database query preloading to eliminate bottleneck points.
 \end{itemize}
 
 
