@@ -129,11 +129,6 @@ INPUT /home/satyam/.miktex/texmfs/install/tex/latex/fontawesome5/ufontawesomebra
 INPUT /home/satyam/.miktex/texmfs/install/tex/latex/fontawesome5/ufontawesomebrands1.fd
 INPUT /home/satyam/.miktex/texmfs/install/tex/latex/fontawesome5/ufontawesomebrands1.fd
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/fontawesome5/fa5brands1.tfm
-INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmr6.tfm
-INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmmi9.tfm
-INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmsy9.tfm
-INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
@@ -169,7 +164,5 @@ INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
