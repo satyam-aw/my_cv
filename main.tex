@@ -1,0 +1,121 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Color configuration
+\definecolor{primary}{RGB}{0,0,0}
+\definecolor{links}{RGB}{0,32,96}
+\hypersetup{colorlinks=true, linkcolor=links, urlcolor=links}
+
+% Page styling
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=1pt, parsep=1pt}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \bfseries SATYAM AWASTHI} \\ \vspace{4pt}
+    \href{mailto:satyam.aw@yahoo.com}{satyam.aw@yahoo.com} \ | \ Mountain View, CA \ | \ \href{https://github.io}{satyam-aw.github.io} \\ \vspace{2pt}
+    \href{https://github.com}{GitHub: SatyamA007} \ | \ \href{https://linkedin.com}{LinkedIn: satyam-awasthi}
+\end{center}
+
+\vspace{-4pt}
+\noindent Research and Systems Engineer specializing at the intersection of \textbf{Spatial AI, Autonomous Decision-Making, and Human-Computer Interaction (HCI)}. Proven record of designing published mixed-reality locomotion frameworks and engineering high-throughput, constraint-bound agentic pipelines within large-scale distributed architectures.
+
+% Education Section
+\section{Education}
+\noindent {\bf University of California, Santa Barbara} \hfill Santa Barbara, CA, US \\
+{\em M.S. in Computer Science (GPA: 3.91/4.00)} \hfill 2021 -- 2023 \\
+Graduate Research focused on Spatial AI, AR/VR, and HCI at the Four Eyes Lab. \\
+
+\noindent {\bf Indian Institute of Technology, Kharagpur} \hfill Kharagpur, India \\
+{\em Bachelor of Technology in Electrical Engineering, Minor in Computer Science (CGPA: 8.98/10.00)} \hfill 2016 -- 2020 \\
+Graduated with First Class Honors. Completed core navigation pipelines for Autonomous Ground Vehicles.
+
+% Research Publications Section
+\section{Publications}
+\begin{itemize}
+    \item {\bf S. Awasthi}, V. Ross, S. Lim, M. Beyeler, T. Höllerer. ``Eye Tracking Performance in Mobile Mixed Reality.'' {\em 2024 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)}, 2024. \href{https://doi.org}{[DOI Link]}
+    \item {\bf S. Awasthi}, V. Ross, M. Beyeler, T. Höllerer. ``EyeTTS: Evaluating and Calibrating Eye Tracking for Mixed-Reality Locomotion.'' {\em 2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)}, 2023. \href{https://doi.org}{[DOI Link]}
+    \item S. Das, {\bf S. Awasthi}, A. Shamnan, P. De, S. Chakraborty, B. Mitra. ``SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing.'' {\em 2022 14th International Conference on COMmunication Systems \& NETworkS (COMSNETS)}, 2022. \href{https://doi.org}{[DOI Link]}
+\end{itemize}
+
+% Professional Experience Section
+\section{Professional Experience}
+
+\noindent {\bf Intuit Inc} \hfill Mountain View, CA \\
+{\em Software Engineer 2} \hfill Mar 2024 -- Jan 2026
+\begin{itemize}
+    \item Implemented a dual-stage \textbf{agentic decision pipeline} leveraging structured LLMs with tool-schema routing for real-time intent classification and sequential state tracking.
+    \item Developed a decoupled \textbf{generative UI engine} using RAG to fetch component primitives and a structured LLM to optimize deterministic UI layout configurations.
+\end{itemize}
+
+\noindent {\bf Yahoo Inc} \hfill Mountain View, CA \\
+{\em Software Dev Engineer II (IC3)} \hfill Apr 2023 -- Nov 2023
+\begin{itemize}
+    \item Developed client-side rule engines to process asynchronous receipt payloads, executing deterministic filtering and cost-optimization algorithms for \textbf{real-time decision support}.
+    \item Designed a dynamic, state-driven carousel UI framework optimized for high-volume content delivery systems.
+\end{itemize}
+
+\noindent {\bf Coupang Global LLC} \hfill Mountain View, CA \\
+{\em Software Engineering Intern} \hfill Jun 2022 -- Sep 2022
+\begin{itemize}
+    \item Engineered \textbf{context-aware filtering heuristics} to prune multi-dimensional search spaces based on user state vectors prior to recommendation execution.
+    \item Designed \textbf{Content-Based Filtering (CBF)} layers using \textbf{cosine similarity} to rank high-dimensional product features against pre-filtered user affinity profiles.
+    \item Optimized system performance to increase \textbf{request throughput} and reduce \textbf{latency scaling curves} while maintaining downstream user conversion baselines.
+\end{itemize}
+
+\noindent {\bf Samsung Research Institute} \hfill Noida, India \\
+{\em Software Engineer (CL 2)} \hfill Sep 2020 -- Sep 2021
+\begin{itemize}
+    \item Acted as Lead Developer for a core system privacy framework, implementing deterministic policy-enforcement algorithms and coordinating integration across 3 platform teams.
+    \item Honored with the Samsung Spot Award for designing verifiably secure architectural patterns and fault-tolerant codebase structures.
+    \item Optimized control logic and finite state machines within the native VisualVoiceMail subsystem to minimize latency and memory overhead under hardware constraints.
+\end{itemize}
+
+% Selected Projects Section
+\section{Selected Projects}
+
+\noindent {\bf JitterNot} \hfill UCSB, 2022
+\begin{itemize}
+    \item Researched and developed targeted signal processing filters and low-latency smoothing algorithms to mitigate noise and jitter in real-time tracking streams.
+    \item Evaluated user interaction metrics across spatial interface layouts to maximize baseline tracking stability and system responsiveness.
+\end{itemize}
+
+\noindent {\bf In Motion} \hfill UCSB, 2022
+\begin{itemize}
+    \item Designed interactive locomotion and path-navigation modules optimized for immersive tracking modalities within virtual and mixed reality environments.
+    \item Engineered calibration pipelines to align physical movement state vectors smoothly with dynamic, virtual coordinate spaces.
+\end{itemize}
+
+\noindent {\bf Tweeter: Distributed Infrastructure Testbed} \hfill UCSB, Fall 2021
+\begin{itemize}
+    \item Conducted phasal load testing via Tsung up to 512 users/second, mapping user trajectories as state machines to analyze \textbf{latency scaling curves}.
+    \item Eliminated N+1 bottlenecks using database pagination and \textbf{ActiveRecord preloading includes} to batch-fetch relational rows via optimized ID collections.
+    \item Optimized high-concurrency read throughput by deploying \textbf{nested Russian Doll fragment caches} and horizontal/vertical server auto-scaling.
+\end{itemize}
+
+\noindent {\bf Autonomous Ground Vehicle \& Swarm Robotics} \hfill IIT Kharagpur, 2016 -- 2018
+\begin{itemize}
+    \item Built an autonomous navigation stack in ROS, fusing heterogeneous sensor streams (LiDAR, IMU, GPS) via an Extended Kalman Filter (EKF).
+    \item Implemented visual obstacle segmentation networks (SegNet/U-Net) along with global (A*/Dijkstra) and local (DWA) path planners.
+    \item Researched decentralized swarm coordination using peer-to-peer relative pose estimation (AprilTags) over an ad-hoc XBee mesh network.
+\end{itemize}
+
+% Skills Section
+\section{Technical Skills}
+\noindent {\bf Programming Languages:} Python, C++, Kotlin, Java, MATLAB, SQL \\
+\noindent {\bf Frameworks \& Core Tools:} LangChain, Pydantic (JSON Schema), ROS, Android/iOS Native SDKs, OpenCV, PyTorch, Milvus/Vector Databases, Tsung, ActiveRecord \\
+\noindent {\bf Methodologies \& Core Research:} Spatial AI, Autonomous Decision-Making, Human-Computer Interaction (HCI), Agentic Architectures, State-Space Estimation, Distributed Systems Benchmarking, Constraint-Bound Optimization
+
+\end{document}
