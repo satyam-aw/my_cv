@@ -1,129 +1,166 @@
 \documentclass[10pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[margin=0.65in]{geometry}
+\usepackage[margin=0.6in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xcolor}
 
-% Color configuration
-\definecolor{primary}{RGB}{0,0,0}
-\definecolor{links}{RGB}{0,32,96}
-\hypersetup{colorlinks=true, linkcolor=links, urlcolor=links}
+% Color Configurations
+\definecolor{primary}{RGB}{30, 41, 59}   % Slate Blue
+\definecolor{secondary}{RGB}{71, 85, 105} % Soft Charcoal
+\definecolor{accent}{RGB}{2, 132, 199}   % Deep Sky Blue
 
-% Page styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent
+}
+
+% Typography Configurations
+\urlstyle{same}
 \pagestyle{empty}
-\setlist[itemize]{leftmargin=*, noitemsep, topsep=1pt, parsep=1pt}
 
-% Section formatting
-\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{6pt}
+% Section Headers Formatting
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}{0em}
+  {}[\color{secondary}\titlerule\vspace{0.4em}]
+
+\titlespacing*{\section}{0pt}{1.2em}{0.4em}
+
+% Custom List Formats
+\setlist[itemize]{leftmargin=1.5em, noitemsep, topsep=0.2em, parsep=0.1em}
 
 \begin{document}
 
-% Header
+% ==================== HEADER ====================
 \begin{center}
-    {\LARGE \bfseries SATYAM AWASTHI} \\ \vspace{4pt}
-    \href{mailto:satyam.aw@yahoo.com}{satyam.aw@yahoo.com} \ | \ \href{https://satyam-aw.github.io}{satyam-aw.github.io} \ | \ \href{https://github.com/satyam-aw}{GitHub: satyam-aw} \ | \ \href{https://orcid.org/0000-0002-6095-4303}{orcid} \ | \ \href{https://linkedin.com}{LinkedIn: satyam-awasthi}\\ \vspace{2pt}
-    %\href{https://linkedin.com}{LinkedIn: satyam-awasthi}  \ | \ Kanpur, UP, India
+    {\LARGE\bfseries\color{primary} Satyam Awasthi} \\ \vspace{0.3em}
+    {\color{secondary} Researcher \& Software Engineer} \\ \vspace{0.3em}
+    \small 
+    \href{mailto:satyam.aw@yahoo.com}{satyam.aw@yahoo.com} \ | \ \href{https://satyam-aw.github.io}{satyam-aw.github.io} \ | \ \href{https://github.com/satyam-aw}{GitHub: satyam-aw} \ | \ \href{https://orcid.org/0000-0002-6095-4303}{ORCID: 0000-0002-6095-4303} \ | \ \href{https://www.linkedin.com/in/satyam-awasthi}{linkedIn}  \\ \vspace{4pt}
+    Kanpur, IN \,$\cdot$\, 
+    UCSB \& IIT Kharagpur Alum
 \end{center}
 
-\vspace{-4pt}
-\noindent Research and Systems Engineer specializing at the intersection of \textbf{Spatial AI, Autonomous Decision-Making, and Human-Computer Interaction (HCI)}. Proven record of designing published mixed-reality locomotion frameworks and engineering high-throughput, constraint-bound agentic pipelines within large-scale distributed architectures.
+\vspace{0.5em}
 
-% Education Section
-\section{Education}
-\noindent {\bf University of California, Santa Barbara} \hfill Santa Barbara, CA, US \\
-{\em M.S. in Computer Science (GPA: 3.91/4.00)} \hfill 2021 -- 2023 \\
+% ==================== RESEARCH SUMMARY ====================
+\section*{Professional Summary}
+Computer Science researcher and software engineer specializing in \textbf{Autonomous Decision-Making}, \textbf{Spatial AI}, \textbf{Computer Vision}, and \textbf{Human-Computer Interaction (HCI)}. Focused on developing deterministic state frameworks and intelligent agent architectures under tight real-world constraints.
+
+% ==================== EDUCATION ====================
+\section*{Education}
+\noindent
+\textbf{University of California, Santa Barbara} \hfill Santa Barbara, CA \\
+\textit{M.S. in Computer Science} \hfill 2021 – 2023 \\
 Graduate Research focused on Spatial AI, AR/VR, and HCI at the Four Eyes Lab. \\
 
-\noindent {\bf Indian Institute of Technology, Kharagpur} \hfill Kharagpur, India \\
-{\em Bachelor of Technology in Electrical Engineering, Minor in Computer Science (CGPA: 8.98/10.00)} \hfill 2016 -- 2020 \\
-Graduated with First Class Honors. Completed core navigation pipelines for Autonomous Ground Vehicles.
+\noindent
+\textbf{Indian Institute of Technology, Kharagpur} \hfill Kharagpur, India \\
+\textit{Bachelor of Technology in Electrical Engineering (Minor in Computer Science)} \hfill 2016 – 2020 \\
+Graduated with First Class Honors.
 
-% Research Publications Section
-\section{Publications}
+% ==================== SKILLS ====================
+\section*{Skills}
+\noindent \textbf{Programming Languages (Expert):} Python, C++, Kotlin, Java, MATLAB, SQL \\
+\noindent \textbf{Frameworks \& Core Tools (Advanced):} Android/iOS Native SDKs, LangChain, Pydantic (JSON Schema), OpenCV, ROS (Robot Operating System), PyTorch \\
+\noindent \textbf{Methodologies \& Core Research:} Autonomous Decision-Making, Human-Computer Interaction (HCI), Spatial AI, Agentic Architectures, Multi-Modal Sensor Fusion, Finite State Automation
+
+% ==================== PUBLICATIONS ====================
+\section*{Publications}
+\noindent
+\textbf{Eye Tracking Performance in Mobile Mixed Reality} \\
+\textit{IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)}, 2024. \\
+Investigated low-latency mobile eye tracking performance profiles across modern mixed reality layouts. Supported by NSF Grant \#2211784. \\
+
+\noindent
+\textbf{EyeTTS: Evaluating and Calibrating Eye Tracking for Mixed-Reality Locomotion} \\
+\textit{IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)}, 2023. \\
+Proposed unique calibration logic pipelines specifically optimized for eye tracking modalities within mixed-reality locomotion patterns. Supported by NSF Grant \#2211784. \\
+
+\noindent
+\textbf{SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing} \\
+\textit{14th International Conference on COMmunication Systems \& NETworkS (COMSNETS)}, 2022. \\
+Created inertial tracking methods to decode architectural hand stroke motions into alphanumeric symbols on wrist-worn wearables.
+
+% ==================== REFINED EXPERIENCE ====================
+\section*{Experience}
+
+\noindent
+\textbf{Intuit Inc} \hfill Mountain View, CA \,$\cdot$\, Mar 2024 – Jan 2026 \\
+\textit{Software Engineer 2} 
 \begin{itemize}
-    \item {\bf S. Awasthi}, V. Ross, S. Lim, M. Beyeler, T. Höllerer. ``Eye Tracking Performance in Mobile Mixed Reality.'' {\em 2024 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)}, 2024. \href{https://doi.org}{[DOI Link]}
-    \item {\bf S. Awasthi}, V. Ross, M. Beyeler, T. Höllerer. ``EyeTTS: Evaluating and Calibrating Eye Tracking for Mixed-Reality Locomotion.'' {\em 2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)}, 2023. \href{https://doi.org}{[DOI Link]}
-    \item S. Das, {\bf S. Awasthi}, A. Shamnan, P. De, S. Chakraborty, B. Mitra. ``SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing.'' {\em 2022 14th International Conference on COMmunication Systems \& NETworkS (COMSNETS)}, 2022. \href{https://doi.org}{[DOI Link]}
+    \item Built dual-stage \textbf{agentic decision pipelines} using tool-schema routing for real-time intent classification and sequential state tracking.
+    \item Developed a decoupled \textbf{generative UI engine} leveraging RAG and structured LLMs to optimize deterministic component layouts.
 \end{itemize}
 
-% Professional Experience Section
-\section{Professional Experience}
-
-\noindent {\bf Intuit Inc} \hfill Mountain View, CA \\
-{\em Software Engineer 2} \hfill Mar 2024 -- Jan 2026
+\noindent
+\textbf{Yahoo Inc} \hfill Mountain View, CA \,$\cdot$\, Apr 2023 – Nov 2023 \\
+\textit{Software Dev Engineer II (IC3)} 
 \begin{itemize}
-    \item Implemented a dual-stage \textbf{agentic decision pipeline} leveraging structured LLMs with tool-schema routing for real-time intent classification and sequential state tracking.
-    \item Developed a decoupled \textbf{generative UI engine} using RAG to fetch component primitives and a structured LLM to optimize deterministic UI layout configurations.
+    \item Developed \textbf{client-side rule engines} for asynchronous receipt payloads, executing deterministic filtering for \textbf{real-time decision support}.
+    \item Designed a dynamic, state-driven carousel UI framework optimized for client-side rendering efficiency.
 \end{itemize}
 
-\noindent {\bf Yahoo Inc} \hfill Mountain View, CA \\
-{\em Software Dev Engineer II (IC3)} \hfill Apr 2023 -- Nov 2023
+\noindent
+\textbf{Coupang Global LLC} \hfill Mountain View, CA \,$\cdot$\, Jun 2022 – Sep 2022 \\
+\textit{Software Engineering Intern} 
 \begin{itemize}
-    \item Developed client-side rule engines to process asynchronous receipt payloads, executing deterministic filtering and cost-optimization algorithms for \textbf{real-time decision support}.
-    \item Designed a dynamic, state-driven carousel UI framework optimized for high-volume content delivery systems.
+    \item Engineered \textbf{context-aware heuristics} to prune multi-dimensional search spaces based on active user state vectors.
+    \item Designed \textbf{Content-Based Filtering (CBF)} layers using \textbf{cosine similarity} to rank high-dimensional product features.
 \end{itemize}
 
-\noindent {\bf Coupang Global LLC} \hfill Mountain View, CA \\
-{\em Software Engineering Intern} \hfill Jun 2022 -- Sep 2022
+\noindent
+\textbf{Samsung Research Institute} \hfill Noida, India \,$\cdot$\, Sep 2020 – Sep 2021 \\
+\textit{Software Engineer (CL 2)} 
 \begin{itemize}
-    \item Engineered \textbf{context-aware filtering heuristics} to prune multi-dimensional search spaces based on user state vectors prior to recommendation execution.
-    \item Designed \textbf{Content-Based Filtering (CBF)} layers using \textbf{cosine similarity} to rank high-dimensional product features against pre-filtered user affinity profiles.
-    \item Optimized system performance to increase \textbf{request throughput} and reduce \textbf{latency scaling curves} while maintaining downstream user conversion baselines.
+    \item Architected a \textbf{continuous on-device perception pipeline} ingesting multi-modal media streams for automated ML classification.
+    \item Designed a \textbf{cross-profile data brokering engine} leveraging multi-user storage isolation to route assets from \textbf{User 1} to sandboxed \textbf{User 0}.
 \end{itemize}
 
-\noindent {\bf Samsung Research Institute} \hfill Noida, India \\
-{\em Software Engineer (CL 2)} \hfill Sep 2020 -- Sep 2021
+
+% ==================== PROJECTS ====================
+\section*{Agentic Architectures, Sequential Decision Models, and Applied ML}
+
+\noindent
+\textbf{JitterNot} \\
+\textit{An LSTM-based Model Predictive Controller for Adaptive Video Streaming}
 \begin{itemize}
-    \item Acted as Lead Developer for a core system privacy framework, implementing deterministic policy-enforcement algorithms and coordinating integration across 3 platform teams.
-    \item Honored with the Samsung Spot Award for designing verifiably secure architectural patterns and fault-tolerant codebase structures.
-    \item Optimized control logic and finite state machines within the native VisualVoiceMail subsystem to minimize latency and memory overhead under hardware constraints.
+    \item Developed an LSTM network for real-time throughput prediction, simplifying the closed-loop control system from MISO to SISO.
+    \item Implemented an MPC controller leveraging Receding Horizon Control (RHC) principles to dynamically calculate optimal video resolution.
 \end{itemize}
 
-% Selected Projects Section
-\section{Selected Projects}
-
-\noindent {\bf JitterNot} \hfill UCSB, 2022
+\noindent
+\textbf{In Motion — HAR using DeepConvLSTM} \\
+\textit{Distributed Mobile Computing System for Human Activity Recognition}
 \begin{itemize}
-    \item Researched and developed targeted signal processing filters and low-latency smoothing algorithms to mitigate noise and jitter in real-time tracking streams.
-    \item Evaluated user interaction metrics across spatial interface layouts to maximize baseline tracking stability and system responsiveness.
+    \item Designed a client-server telemetry pipeline streaming high-frequency accelerometer and gyroscope data for rolling window inference.
+    \item Implemented a DeepConvLSTM core architecture to model spatial-temporal features using TimeDistributed CNN layers.
 \end{itemize}
 
-\noindent {\bf In Motion} \hfill UCSB, 2022
-\begin{itemize}
-    \item Designed interactive locomotion and path-navigation modules optimized for immersive tracking modalities within virtual and mixed reality environments.
-    \item Engineered calibration pipelines to align physical movement state vectors smoothly with dynamic, virtual coordinate spaces.
-\end{itemize}
-
-\noindent {\bf Tweeter: Distributed Infrastructure Testbed} \hfill UCSB, Fall 2021
-\begin{itemize}
-    \item Conducted phasal load testing via Tsung up to 512 users/second, mapping user trajectories as state machines to analyze \textbf{latency scaling curves}.
-    \item Eliminated N+1 bottlenecks using database pagination and \textbf{ActiveRecord preloading includes} to batch-fetch relational rows via optimized ID collections.
-    \item Optimized high-concurrency read throughput by deploying \textbf{nested Russian Doll fragment caches} and horizontal/vertical server auto-scaling.
-\end{itemize}
-
-\noindent {\bf Autonomous Ground Vehicle \& Swarm Robotics} \hfill IIT Kharagpur, 2016 -- 2018
+\noindent
+\textbf{Autonomous Ground Vehicle \& Swarm Robotics} \\
+\textit{End-to-End Perception and Planning for Robotic Fleets}
 \begin{itemize}
     \item Built an autonomous navigation stack in ROS, fusing heterogeneous sensor streams (LiDAR, IMU, GPS) via an Extended Kalman Filter (EKF).
-    \item Implemented visual obstacle segmentation networks (SegNet/U-Net) along with global (A*/Dijkstra) and local (DWA) path planners.
+    \item Implemented visual obstacle segmentation networks (SegNet/U-Net) along with global ($A^*$/Dijkstra) and local (DWA) path planners.
     \item Researched decentralized swarm coordination using peer-to-peer relative pose estimation (AprilTags) over an ad-hoc XBee mesh network.
 \end{itemize}
 
-% Teaching Experience Section
-\section{Teaching Experience}
-\noindent {\bf University of California, Santa Barbara} \hfill Santa Barbara, CA, US \\
-{\em Graduate Teaching Assistant -- Department of Computer Science} \hfill Fall 2021 -- Spring 2023
+\noindent
+\textbf{CohesiveAR} \\
+\textit{Augmented Reality Framework for Texture Extraction and Homography Space Mapping}
 \begin{itemize}
-    \item Supervised instructional labs, led technical discussion sections, and formulated grading parameters for foundational computer science and systems programming courses.
-    \item Conducted systematic codebase verification and architectural code reviews for over 60 students, troubleshooting asynchronous execution and data structure bottlenecks.
+    \item Engineered an asset ingestion pipeline using Google ARCore and OpenCV to project 3D world coordinates into 2D display space.
+    \item Implemented perspective wrap and homography transformations to rectify camera tilt skew into standardized orthogonal textures.
 \end{itemize}
 
-% Skills Section (Now at the Bottom)
-\section{Technical Skills}
-\noindent {\bf Programming Languages (Expert):} Python, C++, Kotlin, Java, MATLAB, SQL \\
-\noindent {\bf Frameworks \& Core Tools (Advanced):} Android/iOS Native SDKs, LangChain, Pydantic (JSON Schema), OpenCV, ROS (Robot Operating System), PyTorch \\
-\noindent {\bf Methodologies \& Core Research (Specialist):} Autonomous Decision-Making, Human-Computer Interaction (HCI), Spatial AI, Agentic Architectures
+% ==================== TEACHING ====================
+\section*{Teaching}
+\noindent
+\textbf{University of California, Santa Barbara} \hfill Santa Barbara, CA \\
+\textit{Graduate Teaching Assistant} \hfill 2021 – 2023
+% \begin{itemize}
 \end{document}
