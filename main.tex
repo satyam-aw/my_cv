@@ -5,6 +5,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{fontawesome5}
 
 % Color Configurations
 \definecolor{primary}{RGB}{30, 41, 59}   % Slate Blue
@@ -34,15 +35,23 @@
 
 \begin{document}
 
+% Add this line to the preamble of your document (before \begin{document}):
+% \usepackage{fontawesome5}
+
 % ==================== HEADER ====================
 \begin{center}
     {\LARGE\bfseries\color{primary} Satyam Awasthi} \\ \vspace{0.3em}
-    {\color{secondary} Researcher \& Software Engineer} \\ \vspace{0.3em}
+    {\color{secondary} Researcher \& Software Engineer} \\ \vspace{0.4em}
     \small 
-    \href{mailto:satyam.aw@yahoo.com}{satyam.aw@yahoo.com} \ | \ \href{https://satyam-aw.github.io}{satyam-aw.github.io} \ | \ \href{https://github.com/satyam-aw}{GitHub: satyam-aw} \ | \ \href{https://orcid.org/0000-0002-6095-4303}{ORCID: 0000-0002-6095-4303} \ | \ \href{https://www.linkedin.com/in/satyam-awasthi}{linkedIn}  \\ \vspace{4pt}
+    \faEnvelope~\href{mailto:satyam.aw@yahoo.com}{satyam.aw@yahoo.com} \ | \ 
+    \faGlobe~\href{https://github.io}{satyam-aw.github.io} \ | \ 
+    \faGithub~\href{https://github.com}{satyam-aw} \ | \ 
+    \faOrcid~\href{https://orcid.org}{0000-0002-6095-4303} \ | \ 
+    \faLinkedin~\href{https://linkedin.com}{LinkedIn}  \\ \vspace{6pt}
     Kanpur, IN \,$\cdot$\, 
     UCSB \& IIT Kharagpur Alum
 \end{center}
+
 
 \vspace{0.5em}
 
@@ -54,37 +63,45 @@ Computer Science researcher and software engineer specializing in \textbf{Autono
 \section*{Education}
 \noindent
 \textbf{University of California, Santa Barbara} \hfill Santa Barbara, CA \\
-\textit{M.S. in Computer Science} \hfill Sep 2021 – Jun 2023 \\
+\textit{M.S. in Computer Science (GPA: 3.91/4.00)} \hfill Sep 2021 – Jun 2023 \\
 Graduate Research focused on Spatial AI, AR/VR, and HCI at the Four Eyes Lab. \\
+Advisor: \href{https://scholar.google.com/citations?user=008lr2cAAAAJ&hl=en}{\color{accent}Prof. Tobias Höllerer} \,$\cdot$\, Co-Advisor: \href{https://scholar.google.com/citations?user=dK-0kG4AAAAJ&hl=en}{\color{accent}Prof. Michael Beyeler} \\
 
 \noindent
 \textbf{Indian Institute of Technology, Kharagpur} \hfill Kharagpur, India \\
-\textit{B.Tech. in Electrical Engineering (Minor in Computer Science)} \hfill Jul 2016 – Jul 2020 \\
+\textit{B.Tech. in Electrical Engineering, Minor in Computer Science (GPA: 8.98/10.0)} \hfill Jul 2016 – Jul 2020 \\
 Graduated with First Class Honors.
 
 % ==================== SKILLS ====================
 \section*{Skills}
-\noindent \textbf{Programming Languages (Expert):} Python, C++, Kotlin, Java, MATLAB, SQL \\
+\noindent \textbf{Programming Languages (Expert):} Python, C++, Kotlin, Java, MATLAB \\
 \noindent \textbf{Frameworks \& Core Tools (Advanced):} Android/iOS Native SDKs, LangChain, Pydantic (JSON Schema), OpenCV, ROS (Robot Operating System), PyTorch \\
 \noindent \textbf{Methodologies \& Core Research:} Autonomous Decision-Making, Human-Computer Interaction (HCI), Spatial AI, Agentic Architectures, Multi-Modal Sensor Fusion, Finite State Automation
 
 % ==================== PUBLICATIONS ====================
 \section*{Publications}
+
+\subsection*{Refereed Conference Papers}
+\noindent
+\textbf{SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing} \\
+\textit{Proceedings of the 14th International Conference on COMmunication Systems \& NETworkS (COMSNETS)}, 2022. \\
+\href{https://doi.org/10.1109/COMSNETS53615.2022.9668531}{\color{accent}\footnotesize DOI: 10.1109/COMSNETS53615.2022.9668531} \\
+Created inertial tracking methods to decode architectural hand stroke motions into alphanumeric symbols on wrist-worn wearables.
+
+\subsection*{Refereed Poster Papers}
 \noindent
 \textbf{Eye Tracking Performance in Mobile Mixed Reality} \\
 \textit{IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)}, 2024. \\
+\href{https://doi.org/10.1109/VRW62533.2024.00321}{\color{accent}\footnotesize DOI: 10.1109/VRW62533.2024.00321} \\
 Investigated low-latency mobile eye tracking performance profiles across modern mixed reality layouts. Supported by NSF Grant \#2211784. \\
 
 \noindent
 \textbf{EyeTTS: Evaluating and Calibrating Eye Tracking for Mixed-Reality Locomotion} \\
 \textit{IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)}, 2023. \\
-Proposed unique calibration logic pipelines specifically optimized for eye tracking modalities within mixed-reality locomotion patterns. Supported by NSF Grant \#2211784. \\
+\href{https://doi.org/10.1109/ISMAR-Adjunct60411.2023.00104}{\color{accent}\footnotesize DOI: 10.1109/ISMAR-Adjunct60411.2023.00104} \\
+Proposed unique calibration logic pipelines specifically optimized for eye tracking modalities within mixed-reality locomotion patterns. Supported by NSF Grant \#2211784.
 
-\noindent
-\textbf{SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing} \\
-\textit{14th International Conference on COMmunication Systems \& NETworkS (COMSNETS)}, 2022. \\
-Created inertial tracking methods to decode architectural hand stroke motions into alphanumeric symbols on wrist-worn wearables.
-
+\newpage
 % ==================== REFINED EXPERIENCE ====================
 \section*{Experience}
 
@@ -125,16 +142,16 @@ Created inertial tracking methods to decode architectural hand stroke motions in
 \section*{Projects}
 
 \noindent
-\textbf{\href{https://satyam-aw.github.io/projects/jitternot/}{JitterNot}} \hfill UCSB \\
-\textit{LSTM-Based Model Predictive Controller for Adaptive Video Streaming}
+\textbf{\href{https://satyam-aw.github.io/projects/jitternot/}{JitterNot}} \hfill Jan 2022 – Mar 2022 \\
+\textit{LSTM-Based Model Predictive Controller for Adaptive Video Streaming}  \hfill UCSB
 \begin{itemize}
     \item Developed an LSTM network for real-time throughput prediction, transforming the closed-loop control system from MISO to SISO.
     \item Implemented an MPC controller leveraging Receding Horizon Control (RHC) principles to dynamically calculate optimal video resolution.
 \end{itemize}
 
 \noindent
-\textbf{\href{https://satyam-aw.github.io/projects/autonomous_ground_vehicle_and_swarm_robotics/}{Autonomous Ground Vehicle \& Swarm Robotics}} \hfill IIT Kharagpur \\
-\textit{End-to-End Perception, Planning, and Multi-Agent Navigation Stack}
+\textbf{\href{https://satyam-aw.github.io/projects/autonomous_ground_vehicle_and_swarm_robotics/}{Autonomous Ground Vehicle \& Swarm Robotics}} \hfill Jan 2016 – Dec 2018  \\
+\textit{End-to-End Perception, Planning, and Multi-Agent Navigation Stack}  \hfill IIT Kharagpur
 \begin{itemize}
     \item Built an autonomous navigation stack in ROS, fusing heterogeneous sensor streams (LiDAR, IMU, GPS) via an Extended Kalman Filter (EKF).
     \item Implemented visual obstacle segmentation networks (U-Net) along with global ($A^*$/Dijkstra) and local (DWA) path planners.
@@ -143,24 +160,24 @@ Created inertial tracking methods to decode architectural hand stroke motions in
 
 
 \noindent
-\textbf{\href{https://satyam-aw.github.io/projects/in_motion_har_deepconvlstm/}{In Motion — HAR using DeepConvLSTM}} \hfill IIT Kharagpur \\
-\textit{Distributed Mobile Computing System for Human Activity Recognition}
+\textbf{\href{https://satyam-aw.github.io/projects/in_motion_har_deepconvlstm/}{In Motion — HAR using DeepConvLSTM}}  \hfill Nov 2019 – Nov 2019 \\
+\textit{Distributed Mobile Computing System for Human Activity Recognition} \hfill IIT Kharagpur 
 \begin{itemize}
     \item Designed a client-server telemetry pipeline streaming high-frequency IMU sensor arrays for rolling window inference.
     \item Implemented a DeepConvLSTM core architecture using TimeDistributed CNN layers to model spatial-temporal features efficiently.
 \end{itemize}
 
 \noindent
-\textbf{\href{https://satyam-aw.github.io/projects/cohesive_ar/}{CohesiveAR}} \hfill UCSB \\
-\textit{Augmented Reality Pipeline for Texture Extraction and Homography Mapping}
+\textbf{\href{https://satyam-aw.github.io/projects/cohesive_ar/}{CohesiveAR}}  \hfill Apr 2022 – Jun 2022 \\
+\textit{Augmented Reality Pipeline for Texture Extraction and Homography Mapping} \hfill UCSB 
 \begin{itemize}
     \item Engineered an asset ingestion pipeline using Google ARCore and OpenCV to project 3D world coordinates into 2D display spaces.
     \item Implemented perspective warp and homography transformations to rectify camera tilt skew into standardized orthogonal textures.
 \end{itemize}
 
 \noindent
-\textbf{\href{https://satyam-aw.github.io/projects/tweeter/}{Tweeter: Distributed Infrastructure Testbed}} \hfill UCSB \\
-\textit{High-Concurrency Microblogging Testbed on AWS EC2 Clusters}
+\textbf{\href{https://satyam-aw.github.io/projects/tweeter/}{Tweeter: Distributed Infrastructure Testbed}} \hfill Sep 2021 – Dec 2021  \\
+\textit{High-Concurrency Microblogging Testbed on AWS EC2 Clusters} \hfill UCSB
 \begin{itemize}
     \item Conducted high-throughput load testing up to 512 users/sec, mapping user trajectories as state machines to latency scaling curves.
     \item Optimized read throughput by deploying nested fragment caches and database query preloading to eliminate bottleneck points.
@@ -171,10 +188,19 @@ Created inertial tracking methods to decode architectural hand stroke motions in
 \section*{Teaching}
 \noindent
 \textbf{University of California, Santa Barbara} \hfill Santa Barbara, CA \\
-\textit{Graduate Teaching Assistant} \hfill Sep 2021 – Jun 2023
+\textit{\href{https://satyam-aw.github.io/teaching/}{Graduate Teaching Assistant}} \hfill Sep 2021 – Jun 2023
 \begin{itemize}
     \item Directed instructional labs, formulated algorithmic programming assignments, and monitored system architecture milestones for senior capstone teams.
     \item Covered advanced and core tracks: CS189 (Capstone), CS184 (Android), CS24 (C++ Data Structures), and CS16 (Problem Solving).
 \end{itemize}
+
+
+% ==================== ACADEMIC SERVICE ====================
+\section*{Academic Service \& Peer Review}
+
+\noindent
+\textbf{Technical Program Committee \& Peer Reviewer} \\
+\textit{ACM Symposium on User Interface Software and Technology (UIST)} \hfill May 2024 \\
+Served as an external peer reviewer evaluating full paper submissions for novel interface hardware, interactive system architectures, and spatial tracking methodologies.
 
 \end{document}
