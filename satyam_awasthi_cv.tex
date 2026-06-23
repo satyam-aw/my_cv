@@ -1,3 +1,6 @@
+\ifx\WithAttachments\undefined
+  \def\WithAttachments{0}
+\fi
 \documentclass[10pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.6in]{geometry}
@@ -6,6 +9,9 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{pdfpages} % Required package
+\usepackage{pdflscape}
+\usepackage{xstring}
 
 % Color Configurations
 \definecolor{primary}{RGB}{30, 41, 59}   % Slate Blue
@@ -32,6 +38,14 @@
 
 % Custom List Formats
 \setlist[itemize]{leftmargin=1.5em, noitemsep, topsep=0.2em, parsep=0.1em}
+
+% Create the toggle based on our macro variable
+\newif\ifincludeattachments
+\if\WithAttachments1
+  \includeattachmentstrue
+\else
+  \includeattachmentsfalse
+\fi
 
 \begin{document}
 
@@ -210,5 +224,28 @@ Developed a novel \href{https://github.com/satyam-aw/Eye-Tracking-Test-Suite_Eye
 \textbf{Technical Program Committee \& Peer Reviewer} \\
 \textit{ACM Symposium on User Interface Software and Technology (UIST)} \hfill May 2024 \\
 Served as an external peer reviewer evaluating full paper submissions for novel interface hardware, interactive system architectures, and spatial tracking methodologies.
+
+\clearpage
+% === Your regular CV ends right here ===
+
+\ifincludeattachments
+
+    % --- Start of External Documents ---
+    \newgeometry{margin=0pt}
+
+    \begin{landscape}
+    \thispagestyle{empty} % Removes page numbers and headers
+
+    \noindent
+    \centering
+    \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{transcripts/kgp_transcript_full.jpg}
+    \end{landscape}
+    
+    \clearpage          % <--- Add this to cleanly push to a new page
+    \restoregeometry    % Restores regular margins for the next document
+
+    % Inserts all pages of your transcript cleanly
+    \includepdf[pages=-]{transcripts/official_transcript_ucsb.pdf}
+\fi 
 
 \end{document}
