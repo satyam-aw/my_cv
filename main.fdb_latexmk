@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1782208377.52144 "/home/satyam/my_cv/satyam_awasthi_cv.tex" "satyam_awasthi_cv.pdf" "satyam_awasthi_cv" 1782208378.06358 0
+["pdflatex"] 1782213911.17693 "/home/satyam/my_cv/main.tex" "main.pdf" "main" 1782213911.68241 0
   "/home/satyam/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1781016231.7231 77090 98bbc160ff3eabc53a3d67c4284f01ac ""
   "/home/satyam/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1776659478.2643 11548 dfe0e7cf8d591128ab45f8847a935c7e ""
   "/home/satyam/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1779700778.75671 10149492 017d492fdcb40092833c952daaa7ffe8 ""
@@ -93,13 +93,13 @@
   "/home/satyam/.miktex/texmfs/install/tex/latex/url/url.sty" 1776358536.67892 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/satyam/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1776358541.11409 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/home/satyam/.miktex/texmfs/install/tex/latex/xstring/xstring.sty" 1779775828.76321 123 a302f2c651a95033260db60e51527ae8 ""
-  "/home/satyam/my_cv/satyam_awasthi_cv.tex" 1782208376.2935 12982 2850f3c9282b24211e59d6c9f7298e64 ""
-  "satyam_awasthi_cv.aux" 1782208377.93464 162 fa61bf9ecf9314f94d51aa32222a725c "pdflatex"
-  "satyam_awasthi_cv.out" 1782208377.90264 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "satyam_awasthi_cv.tex" 1782208376.2935 12982 2850f3c9282b24211e59d6c9f7298e64 ""
+  "/home/satyam/my_cv/main.tex" 1782213910.03013 13000 722ac2e8ac109bd8e128366da5c620c8 ""
+  "main.aux" 1782213911.56613 162 fa61bf9ecf9314f94d51aa32222a725c "pdflatex"
+  "main.out" 1782213911.53813 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1782213910.03013 13000 722ac2e8ac109bd8e128366da5c620c8 ""
   (generated)
-  "satyam_awasthi_cv.aux"
-  "satyam_awasthi_cv.log"
-  "satyam_awasthi_cv.out"
-  "satyam_awasthi_cv.pdf"
+  "main.aux"
+  "main.log"
+  "main.out"
+  "main.pdf"
   (rewritten before read)
