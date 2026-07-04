@@ -193,6 +193,14 @@ Snigdha Das, \textbf{Satyam Awasthi}, Abdul Shamnar P, Pradipta De, Sandip Chakr
 \end{itemize}
 
 \noindent
+\textbf{\href{https://github.com/satyam-aw/IGVC_Lane_Detector}{IGVC Lane Detection \& Navigation}} \hfill 2018 \\
+\textit{ROS-Based Lane Perception Pipeline for Autonomous Ground Vehicles (IIT Kharagpur)}
+\begin{itemize}
+    \item Developed a ROS-integrated lane perception pipeline using OpenCV, bird's-eye-view projection, CUDA/GPU-accelerated SLIC-style superpixel segmentation, and parabolic lane fitting for real-time autonomous navigation.
+    \item Rejected obstacle and non-lane regions using contour-based ROI extraction, HOG descriptors, and SVM classification, then published local waypoint goals and segmented top-view lane masks for ROS navigation.
+\end{itemize}
+
+\noindent
 \textbf{\href{https://satyam-aw.github.io/projects/in_motion_har_deepconvlstm/}{In Motion — HAR using DeepConvLSTM}} \hfill Nov 2019 \\
 \textit{Embedded Sensor Inference System for Temporal Activity Recognition (IIT Kharagpur)}
 \begin{itemize}
@@ -204,8 +212,8 @@ Snigdha Das, \textbf{Satyam Awasthi}, Abdul Shamnar P, Pradipta De, Sandip Chakr
 \textbf{\href{https://satyam-aw.github.io/projects/battleship-solitaire-solver/}{Battleship Solitaire Solver}} \hfill Apr 2022 -- Jun 2022 \\
 \textit{Solver-Aided Constraint Synthesis for Structured Search Problems (UCSB)}
 \begin{itemize}
-    \item Formulated Battleship Solitaire as a constraint-satisfaction problem in Rosette/Racket, representing grid cells and ship placements as symbolic variables subject to row/column tally, fleet-composition, adjacency, and revealed-cell constraints.
-    \item Designed a solver-aided synthesis pipeline that parses puzzle instances, applies constraints as assertions, and uses Rosette's angelic execution to synthesize concrete board configurations satisfying all constraints.
+    \item Formulated Battleship Solitaire as a symbolic constraint-satisfaction problem in Rosette/Racket, encoding grid cells, ship placements, row/column tallies, adjacency rules, and revealed-cell constraints.
+    \item Used Rosette's solver-aided execution to synthesize valid board configurations satisfying all puzzle constraints.
 \end{itemize}
 
 % \noindent
@@ -278,7 +286,7 @@ ROS/ROS2, Gazebo, RViz, Unity
 
 \noindent
 \textbf{Machine Learning \& Vision:}
-PyTorch, OpenCV
+PyTorch, OpenCV, CUDA/GPU Acceleration
 
 \medskip
 
