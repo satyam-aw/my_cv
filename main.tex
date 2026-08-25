@@ -1,7 +1,9 @@
 \ifx\WithAttachments\undefined
   \def\WithAttachments{0}
 \fi
+
 \documentclass[10pt,letterpaper]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.6in]{geometry}
 \usepackage{titlesec}
@@ -9,15 +11,15 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
-\usepackage{pdfpages} % Required package
+\usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{xstring}
-\usepackage{titlesec}
 
-% Color Configurations
-\definecolor{primary}{RGB}{30, 41, 59}   % Slate Blue
-\definecolor{secondary}{RGB}{71, 85, 105} % Soft Charcoal
-\definecolor{accent}{RGB}{2, 132, 199}   % Deep Sky Blue
+% ==================== COLOR CONFIGURATION ====================
+
+\definecolor{primary}{RGB}{30, 41, 59}
+\definecolor{secondary}{RGB}{71, 85, 105}
+\definecolor{accent}{RGB}{2, 132, 199}
 
 \hypersetup{
     colorlinks=true,
@@ -25,11 +27,11 @@
     urlcolor=accent
 }
 
-% Typography Configurations
+% ==================== TYPOGRAPHY ====================
+
 \urlstyle{same}
 \pagestyle{empty}
 
-% Section Headers Formatting
 \titleformat{\section}
   {\large\bfseries\color{primary}}
   {}{0em}
@@ -37,11 +39,17 @@
 
 \titlespacing*{\section}{0pt}{1.2em}{0.4em}
 
-% Custom List Formats
-\setlist[itemize]{leftmargin=1.5em, noitemsep, topsep=0.2em, parsep=0.1em}
+\setlist[itemize]{
+    leftmargin=1.5em,
+    noitemsep,
+    topsep=0.2em,
+    parsep=0.1em
+}
 
-% Create the toggle based on our macro variable
+% ==================== ATTACHMENT TOGGLE ====================
+
 \newif\ifincludeattachments
+
 \if\WithAttachments1
   \includeattachmentstrue
 \else
@@ -50,11 +58,12 @@
 
 \begin{document}
 
-% Add this line to the preamble of your document (before \begin{document}):
-% \usepackage{fontawesome5}
+% ============================================================
+% HEADER
+% ============================================================
 
-% ==================== HEADER ====================
 \begin{center}
+
     {\LARGE\bfseries\color{primary} Satyam Awasthi} \\ \vspace{0.3em}
     {\color{secondary} Researcher \& Software Engineer} \\ \vspace{0.4em}
     \small 
@@ -62,237 +71,451 @@
     \faGlobe~\href{https://satyam-aw.github.io}{satyam-aw.github.io} \ | \ 
     \faGithub~\href{https://github.com/satyam-aw}{satyam-aw} \ | \ 
     \faOrcid~\href{https://orcid.org/0000-0002-6095-4303}{0000-0002-6095-4303} \ | \ 
-    \faLinkedin~\href{https://linkedin.com/in/satyam-awasthi}{LinkedIn}  \\ \vspace{6pt}
-    % Kanpur, IN \,$\cdot$\, 
-    % UCSB \& IIT Kharagpur Alum
+    \faLinkedin~\href{https://linkedin.com/in/satyam-awasthi}{LinkedIn}  
+    % Kanpur, IN \,$\cdot$\,
 \end{center}
 
+\vspace{0.35em}
 
-\vspace{0.5em}
+% ============================================================
+% RESEARCH SUMMARY
+% ============================================================
 
-\section*{Professional Summary}
+\section*{Research Summary}
 
-Computer Science researcher focused on \textbf{Autonomous Systems}, \textbf{Spatial Perception}, and \textbf{Model-Based and Learning-Based Control}. My research explores how perception, predictive modeling, and planning can be integrated with control frameworks to enable robust long-horizon autonomy in robotic systems operating under uncertainty.
+Computer Science researcher working on \textbf{neural interfaces}, \textbf{physiological sensing}, and \textbf{uncertainty-aware control}. Current work spans \textbf{EEG-based brain--computer interfaces} and \textbf{robust output-feedback model predictive control}.
+
+% ============================================================
+% RESEARCH INTERESTS
+% ============================================================
 
 \section*{Research Interests}
 
-Autonomous Systems, Spatial Perception, Model-Based and Learning-Based Control, and Robot Planning, with emphasis on long-horizon decision-making under uncertainty in real-world robotic environments.
+Neural Interfaces,
+Brain--Computer Interfaces,
+Physiological \& Wearable Sensing,
+Human--Machine Interaction,
+Machine Learning for Biosignals,
+Robust State Estimation,
+and Model Predictive Control.
 
-% ==================== EDUCATION ====================
-
-\section*{Education}
-
-\noindent
-\textbf{University of California, Santa Barbara (UCSB)} \hfill Santa Barbara, CA \\
-\textit{M.S. in Computer Science (GPA: 3.91/4.00)} \hfill Sep 2021 -- Jun 2023
-
-\medskip
-
-\noindent
-\textbf{Indian Institute of Technology, Kharagpur (IIT Kharagpur)} \hfill Kharagpur, India \\
-\textit{B.Tech. in Electrical Engineering, Minor in Computer Science (GPA: 8.98/10.0)} \hfill Jul 2016 -- Jul 2020
-
-% ==================== RESEARCH EXPERIENCE ====================
+% ============================================================
+% RESEARCH EXPERIENCE
+% ============================================================
 
 \section*{Research Experience}
 
-\noindent \textbf{\href{https://four-eyes.github.io/}{Four Eyes Laboratory}, University of California, Santa Barbara} \hfill Sep 2021 -- Jun 2023 \\ 
-\textit{Graduate Researcher} \hfill Advisor: \href{https://www.cs.ucsb.edu/~holl/}{Prof. Tobias H\"ollerer}, Co-Advisor: 
-\href{https://beyelerlab.ucsb.edu/}{Prof. Michael Beyeler}
+% ------------------------------------------------------------
+% KOEHLER
+% ------------------------------------------------------------
+
+\noindent
+\textbf{\href{https://www.imperial.ac.uk/autonomous-systems/}{Autonomous Systems Group}, Imperial College London}
+\hfill Jul 2026 -- Present
+\\
+\textit{Research Collaboration}
+\hfill
+Advisor: \href{https://profiles.imperial.ac.uk/j.kohler}{Dr. Johannes K\"ohler}
 
 \begin{itemize}
-\item Developed \textbf{EyeTTS}, an open-source framework for evaluating and calibrating eye tracking during mixed-reality locomotion, resulting in first-author publications at IEEE ISMAR Adjunct and IEEE VR Workshops.
-\item Designed experimental protocols and software pipelines to quantify gaze-tracking drift during active user motion.
-\item Curated a multi-device eye-tracking dataset and conducted user studies across diverse locomotion layouts.
-\item Published first-author poster papers at IEEE VR and IEEE ISMAR Adjunct venues.
+
+    \item Investigating \textbf{state-dependent estimation and tracking-error bounds}
+    for nonlinear robust output-feedback MPC with state-dependent process and measurement uncertainty.
+
+    \item Developing coupled observer and tracking-error tube propagation using
+    \textbf{contraction-based certificates} for robust constraint tightening and
+    uncertainty-aware trajectory planning.
+
 \end{itemize}
 
 \medskip
 
+% ------------------------------------------------------------
+% UCSB FOUR EYES
+% ------------------------------------------------------------
+
 \noindent
-\textbf{Autonomous Ground Vehicle \& Swarm Robotics Group, IIT Kharagpur} \hfill Jan 2016 -- Dec 2018 \\
+\textbf{\href{https://four-eyes.github.io/}
+{Four Eyes Laboratory}, University of California, Santa Barbara}
+\hfill Sep 2021 -- Jun 2023
+\\
+\textit{Graduate Researcher}
+\hfill
+Advisor:
+\href{https://www.cs.ucsb.edu/~holl/}
+{Prof. Tobias H\"ollerer};
+Co-Advisor:
+\href{https://beyelerlab.ucsb.edu/}
+{Prof. Michael Beyeler}
+
+\begin{itemize}
+
+    \item Developed \textbf{EyeTTS}, an open-source framework for evaluating and
+    calibrating eye tracking during mixed-reality locomotion, resulting in
+    first-author publications at IEEE ISMAR Adjunct and IEEE VR Workshops.
+
+    \item Designed human-subject experiments and analyzed
+    \textbf{gaze-tracking accuracy, calibration drift, and motion-dependent sensing error}
+    across multiple mixed-reality devices.
+
+    \item Released a reproducible
+    \href{https://github.com/satyam-aw/EyeTTS_Calibration-Framework}
+    {\textbf{calibration framework}}
+    and
+    \href{https://github.com/satyam-aw/EyeTTS_Calibration-Framework/tree/main/participant-data}
+    {\textbf{multi-device eye-tracking dataset}}
+    containing gaze trajectories, calibration measurements, and locomotion data.
+
+\end{itemize}
+
+\medskip
+
+% ------------------------------------------------------------
+% IIT KGP ROBOTICS
+% ------------------------------------------------------------
+
+\noindent
+\textbf{Autonomous Ground Vehicle \& Swarm Robotics Group,
+IIT Kharagpur}
+\hfill Jan 2016 -- Dec 2018
+\\
 \textit{Undergraduate Researcher}
 
 \begin{itemize}
-\item Contributed to the development of \textbf{Eklavya 6.0}, the IIT Kharagpur autonomous ground vehicle that finished \textbf{Runner-Up} at the \textbf{Intelligent Ground Vehicle Competition (IGVC) 2018}. \href{https://www.youtube.com/watch?v=nu-RGhk0T80}{\texttt{Competition Video}} \; $\cdot$ \; \href{https://www.youtube.com/@agvkgp}{\texttt{Team AGV}}
-\item Developed a hardware-agnostic navigation stack integrating EKF-based localization from LiDAR, IMU, and GPS streams.
-\item Implemented visual obstacle segmentation using a custom U-Net architecture and hybrid motion planning using A*/Dijkstra and Dynamic Window Approach.
-\item Designed decentralized multi-agent coordination using relative-pose estimation over an ad-hoc mesh network.
+
+    \item Contributed to \textbf{Eklavya 6.0},
+    IIT Kharagpur's autonomous ground vehicle that finished
+    \textbf{Runner-Up} at the
+    \textbf{Intelligent Ground Vehicle Competition (IGVC) 2018}.
+
+    \item Developed perception and navigation components integrating
+    LiDAR, IMU, GPS, vision-based perception, state estimation,
+    and motion planning.
+
+    \item Worked on decentralized multi-agent coordination using
+    relative-pose estimation and communication over an ad-hoc mesh network.
+
 \end{itemize}
 
-% ==================== PUBLICATIONS ====================
+% ============================================================
+% PUBLICATIONS
+% ============================================================
 
 \section*{Publications}
 
 \subsection*{Peer-Reviewed Conference Papers}
 
 \noindent
-\textbf{SmartWatch for Wall Writing: Real-time Transcription of Wall Writing from Inertial Sensing} \\
-Snigdha Das, \textbf{Satyam Awasthi}, Abdul Shamnar P, Pradipta De, Sandip Chakraborty, and Bivas Mitra. \\
+\textbf{SmartWatch for Wall Writing:
+Real-time Transcription of Wall Writing from Inertial Sensing}
+\\
+Snigdha Das,
+\textbf{Satyam Awasthi},
+Abdul Shamnar P,
+Pradipta De,
+Sandip Chakraborty,
+and Bivas Mitra.
+\\
 \textit{COMSNETS}, 2022.
-\href{https://doi.org/10.1109/COMSNETS53615.2022.9668531}{\color{accent}\footnotesize DOI: 10.1109/COMSNETS53615.2022.9668531} \\
+\\
+\href{https://doi.org/10.1109/COMSNETS53615.2022.9668531}
+{\color{accent}\footnotesize
+DOI: 10.1109/COMSNETS53615.2022.9668531}
 
-\vspace{-1em}
+\vspace{-0.5em}
+
 \subsection*{Workshop \& Poster Publications}
 
 \noindent
-\textbf{Eye Tracking Performance in Mobile Mixed Reality} \\
-\textbf{Satyam Awasthi}, Vivian Ross, Sydney Lim, Michael Beyeler, and Tobias H"ollerer. \\
-\textit{IEEE VRW}, 2024.
-\href{https://doi.org/10.1109/VRW62533.2024.00321}{\color{accent}\footnotesize DOI: 10.1109/VRW62533.2024.00321} \\
+\textbf{Eye Tracking Performance in Mobile Mixed Reality}
+\\
+\textbf{Satyam Awasthi},
+Vivian Ross,
+Sydney Lim,
+Michael Beyeler,
+and Tobias H\"ollerer.
+\\
+\textit{IEEE VR Workshops (VRW)}, 2024.
+\\
+\href{https://doi.org/10.1109/VRW62533.2024.00321}
+{\color{accent}\footnotesize
+DOI: 10.1109/VRW62533.2024.00321}
 
 \medskip
 
 \noindent
-\textbf{EyeTTS: Evaluating and Calibrating Eye Tracking for Mixed-Reality Locomotion} \\
-\textbf{Satyam Awasthi}, Vivian Ross, Michael Beyeler, and Tobias H"ollerer. \\
-\textit{ISMAR Adjunct}, 2023.
-\href{https://doi.org/10.1109/ISMAR-Adjunct60411.2023.00104}{\color{accent}\footnotesize DOI: 10.1109/ISMAR-Adjunct60411.2023.00104} \\
+\textbf{EyeTTS:
+Evaluating and Calibrating Eye Tracking for Mixed-Reality Locomotion}
+\\
+\textbf{Satyam Awasthi},
+Vivian Ross,
+Michael Beyeler,
+and Tobias H\"ollerer.
+\\
+\textit{IEEE ISMAR Adjunct}, 2023.
+\\
+\href{https://doi.org/10.1109/ISMAR-Adjunct60411.2023.00104}
+{\color{accent}\footnotesize
+DOI: 10.1109/ISMAR-Adjunct60411.2023.00104}
 
-% ==================== RESEARCH ARTIFACTS ====================
+% ============================================================
+% SELECTED RESEARCH PROJECTS
+% ============================================================
 
-\section*{Research Artifacts}
+\section*{Selected Research Projects}
+
+% ------------------------------------------------------------
+% EEG BCI
+% ------------------------------------------------------------
 
 \noindent
-\textbf{EyeTTS Calibration Framework} \hfill 2022--2024 \\
-\href{https://github.com/satyam-aw/EyeTTS_Calibration-Framework}{\texttt{Calibration Framework}} \; $\cdot$ \;
-% \href{https://project-page-link}{\texttt{Project Page}} \; $\cdot$ \;
-\href{https://github.com/satyam-aw/EyeTTS_User-Study-Framework_Magic-Leap-1}{\texttt{User Study Framework}}
-
+\textbf{
+\href{https://satyam-aw.github.io/projects/bci_maze/}
+{EEG-Based BCI for 3D Navigation}}
+\hfill 2026 -- Present
+\\
+\textit{Independent Neural Interface Project}
 
 \begin{itemize}
-\item Developed an extensible framework for evaluating and calibrating eye-tracking systems during mixed-reality locomotion.
-\item Implemented device-agnostic benchmarking pipelines and automated drift-correction procedures.
-\item Released reproducible software infrastructure supporting eye-tracking research.
+
+    \item Developing a
+    \textbf{4-channel EEG acquisition and decoding pipeline}
+    for real-time control of an interactive 3D navigation environment.
+
+    \item Building an initial
+    \textbf{SSVEP-based intent-decoding system}
+    using neural-signal preprocessing and
+    spectral / correlation-based features
+    for discrete movement commands.
+
+    \item Investigating confidence thresholds and temporal evidence
+    accumulation to characterize the trade-off between
+    \textbf{decoding reliability and command latency}.
+
 \end{itemize}
+
+% ------------------------------------------------------------
+% SMARTWATCH
+% ------------------------------------------------------------
+
+\noindent
+\textbf{
+\href{https://doi.org/10.1109/COMSNETS53615.2022.9668531}
+{SmartWatch for Wall Writing}}
+\hfill 2019 -- 2022
+\\
+\textit{Wearable Inertial Sensing for Human--Computer Interaction}
+
+\begin{itemize}
+
+    \item Contributed to a wearable sensing system for
+    \textbf{real-time transcription of free-form wall writing}
+    from smartwatch inertial measurements.
+
+    \item Explored the use of human wrist-motion signals as an
+    unobtrusive input modality for recognizing physical writing gestures.
+
+\end{itemize}
+
+% ------------------------------------------------------------
+% JITTERNOT
+% ------------------------------------------------------------
+
+\noindent
+\textbf{
+\href{https://satyam-aw.github.io/projects/jitternot/}
+{JitterNot}}
+\hfill Jan 2022 -- Mar 2022
+\\
+\textit{Learning-Based Model Predictive Control for Adaptive Video Streaming
+(UCSB)}
+
+\begin{itemize}
+
+    \item Developed an LSTM-based predictor for network throughput
+    to support closed-loop decisions under non-stationary network dynamics.
+
+    \item Designed a receding-horizon
+    \textbf{model predictive control (MPC)}
+    framework for adaptive bitrate selection under bandwidth constraints.
+
+\end{itemize}
+
+% ------------------------------------------------------------
+% HAR
+% ------------------------------------------------------------
+
+\noindent
+\textbf{
+\href{https://satyam-aw.github.io/projects/in_motion_har_deepconvlstm/}
+{In Motion --- Wearable Human Activity Recognition}}
+\hfill Nov 2019
+\\
+\textit{DeepConvLSTM Modeling of Inertial Sensor Signals (IIT Kharagpur)}
+
+\begin{itemize}
+
+    \item Designed a streaming inference pipeline for
+    \textbf{high-frequency IMU signals}
+    enabling temporal human-activity classification.
+
+    \item Implemented a DeepConvLSTM architecture combining
+    convolutional feature extraction with recurrent temporal modeling
+    of wearable sensor sequences.
+
+\end{itemize}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+
+\section*{Education}
+
+\noindent
+\textbf{University of California, Santa Barbara (UCSB)}
+\hfill Santa Barbara, CA
+\\
+\textit{M.S. in Computer Science (GPA: 3.91/4.00)}
+\hfill Sep 2021 -- Jun 2023
 
 \medskip
 
 \noindent
-\textbf{EyeTTS Mixed-Reality Eye Tracking Dataset} \hfill 2022--2024 \\
-\href{https://github.com/satyam-aw/EyeTTS_Calibration-Framework/tree/main/participant-data}{\texttt{Dataset}} \; $\cdot$ \;
-\href{https://www.youtube.com/playlist?list=PLQbqwztmTvAVAUClXj-sOkpQ9sBJbT5pG}{\texttt{User Study Videos}}
+\textbf{Indian Institute of Technology, Kharagpur (IIT Kharagpur)}
+\hfill Kharagpur, India
+\\
+\textit{B.Tech. in Electrical Engineering,
+Minor in Computer Science (GPA: 8.98/10.0)}
+\hfill Jul 2016 -- Jul 2020
 
-\begin{itemize}
-\item Curated a multi-device mixed-reality locomotion dataset for calibration and performance evaluation.
-\item Collected gaze trajectories, calibration measurements, and locomotion metadata across diverse MR layouts.
-\item Supported experimental validation reported in ISMAR and VRW publications.
-\end{itemize}
+% ============================================================
+% INDUSTRY EXPERIENCE
+% ============================================================
 
-
-
-% ==================== PROJECTS ====================
-\section*{Selected Projects}
-
-\noindent
-\textbf{\href{https://satyam-aw.github.io/projects/jitternot/}{JitterNot}} \hfill Jan 2022 – Mar 2022 \\
-\textit{Learning-Based Model Predictive Control for Adaptive Video Streaming (UCSB)}
-\begin{itemize}
-    \item Developed an LSTM-based predictor for network throughput enabling closed-loop control under non-stationary dynamics.
-    \item Designed a model predictive control (MPC) framework using receding horizon optimization for adaptive decision-making over bandwidth constraints.
-\end{itemize}
-
-\noindent
-\textbf{\href{https://github.com/satyam-aw/IGVC_Lane_Detector}{IGVC Lane Detection \& Navigation}} \hfill June 2018 \\
-\textit{ROS-Based Lane Perception Pipeline for Autonomous Ground Vehicles (IIT Kharagpur)}
-\begin{itemize}
-    \item Developed a ROS-integrated lane perception pipeline using OpenCV, bird's-eye-view projection, CUDA/GPU-accelerated SLIC-style superpixel segmentation, and parabolic lane fitting for real-time autonomous navigation.
-    \item Rejected obstacle and non-lane regions using contour-based ROI extraction, HOG descriptors, and SVM classification, then published local waypoint goals and segmented top-view lane masks for ROS navigation.
-\end{itemize}
-
-\noindent
-\textbf{\href{https://satyam-aw.github.io/projects/in_motion_har_deepconvlstm/}{In Motion — HAR using DeepConvLSTM}} \hfill Nov 2019 \\
-\textit{Embedded Sensor Inference System for Temporal Activity Recognition (IIT Kharagpur)}
-\begin{itemize}
-    \item Designed a streaming inference pipeline for high-frequency IMU signals enabling real-time temporal classification.
-    \item Implemented a DeepConvLSTM architecture combining convolutional feature extraction with temporal sequence modeling for activity recognition.
-\end{itemize}
-
-\noindent
-\textbf{\href{https://satyam-aw.github.io/projects/battleship-solitaire-solver/}{Battleship Solitaire Solver}} \hfill Apr 2022 -- Jun 2022 \\
-\textit{Solver-Aided Constraint Synthesis for Structured Search Problems (UCSB)}
-\begin{itemize}
-    \item Formulated Battleship Solitaire as a symbolic constraint-satisfaction problem in Rosette/Racket, encoding grid cells, ship placements, row/column tallies, adjacency rules, and revealed-cell constraints.
-    \item Used Rosette's solver-aided execution to synthesize valid board configurations satisfying all puzzle constraints.
-\end{itemize}
-
-% \noindent
-% \textbf{\href{https://satyam-aw.github.io/projects/tweeter/}{Tweeter: Distributed Systems Testbed}} \hfill Sep 2021 -- Dec 2021 \\
-% \textit{State-Driven Event Processing System for High-Concurrency Workload Modeling (UCSB)}
-% \begin{itemize}
-%     \item Modeled user interactions as state machines to analyze system latency scaling under high-concurrency workloads.
-%     \item Designed caching and query optimization strategies to improve throughput in distributed database-backed systems under load.
-% \end{itemize}
-
-% ==================== EXPERIENCE ====================
 \section*{Industry Experience}
 
 \noindent
-\textbf{Intuit Inc} \hfill Mountain View, CA \,$\cdot$\, Mar 2024 – Jan 2026 \\
-\textit{Software Engineer 2} 
+\textbf{Intuit Inc}
+\hfill Mountain View, CA
+\,$\cdot$\,
+Mar 2024 -- Jan 2026
+\\
+\textit{Software Engineer 2}
+
 \begin{itemize}
-    \item Built \href{https://satyam-aw.github.io/projects/intuit_generative_ui/}{dual-stage} \textbf{agentic decision pipelines} using tool-schema routing for real-time intent classification and sequential state tracking.
-    \item Developed a decoupled \textbf{generative UI engine} leveraging RAG and structured LLMs to optimize deterministic component layouts.
+
+    \item Built
+    \href{https://satyam-aw.github.io/projects/intuit_generative_ui/}
+    {dual-stage agent pipelines}
+    for intent routing, structured tool execution,
+    and generative user-interface composition.
+
+    \item Developed production platform infrastructure supporting
+    large-scale client applications and internal developer workflows.
+
 \end{itemize}
 
 \noindent
-\textbf{Yahoo Inc} \hfill Mountain View, CA \,$\cdot$\, Apr 2023 – Nov 2023 \\
-\textit{Software Dev Engineer II (IC3)} 
+\textbf{Yahoo Inc}
+\hfill Mountain View, CA
+\,$\cdot$\,
+Apr 2023 -- Nov 2023
+\\
+\textit{Software Dev Engineer II (IC3)}
+
 \begin{itemize}
-    \item Developed \textbf{client-side rule engines} for asynchronous receipt payloads, executing deterministic filtering for \textbf{real-time decision support}.
+
+    \item Developed production Android systems for Yahoo Mail,
+    including data-driven inbox commerce and expense-management features.
+
 \end{itemize}
 
 \noindent
-\textbf{Coupang Global LLC} \hfill Mountain View, CA \,$\cdot$\, Jun 2022 – Sep 2022 \\
-\textit{Software Engineering Intern} 
+\textbf{Coupang Global LLC}
+\hfill Mountain View, CA
+\,$\cdot$\,
+Jun 2022 -- Sep 2022
+\\
+\textit{Software Engineering Intern}
+
 \begin{itemize}
-    \item Engineered \textbf{context-aware heuristics} to prune multi-dimensional search spaces based on active user state vectors.
-    \item Designed \textbf{Content-Based Filtering (CBF)} layers using \textbf{cosine similarity} to rank high-dimensional product features.
+
+    \item Developed user-facing search and product-discovery features
+    for Coupang's Android commerce platform.
+
 \end{itemize}
 
 \noindent
-\textbf{Samsung Research Institute} \hfill Noida, India \,$\cdot$\, Sep 2020 – Sep 2021 \\
-\textit{Software Engineer (CL 2)} 
+\textbf{Samsung Research Institute}
+\hfill Noida, India
+\,$\cdot$\,
+Sep 2020 -- Sep 2021
+\\
+\textit{Software Engineer (CL 2)}
+
 \begin{itemize}
-    \item Architected a \textbf{continuous on-device perception pipeline} ingesting multi-modal media streams for automated ML classification.
-    \item Designed a \textbf{cross-profile data brokering engine} leveraging multi-user storage isolation to route assets from \textbf{User 1} to sandboxed \textbf{User 0}.
+
+    \item Developed Android platform and device applications involving
+    media processing, privacy, and isolated user-storage architectures.
+
 \end{itemize}
 
-% ==================== TEACHING ====================
+% ============================================================
+% TEACHING
+% ============================================================
+
 \section*{Teaching}
+
 \noindent
-\textbf{University of California, Santa Barbara} \hfill Santa Barbara, CA \\
-\textit{\href{https://satyam-aw.github.io/teaching/}{Graduate Teaching Assistant}} \hfill Sep 2021 – Jun 2023
+\textbf{University of California, Santa Barbara}
+\hfill Santa Barbara, CA
+\\
+\textit{
+\href{https://satyam-aw.github.io/teaching/}
+{Graduate Teaching Assistant}}
+\hfill Sep 2021 -- Jun 2023
+
 \begin{itemize}
-    \item Directed instructional labs, formulated algorithmic programming assignments, and monitored system architecture milestones for senior capstone teams.
-    \item Covered advanced and core tracks: CS189 (Capstone), CS184 (Android), CS24 (C++ Data Structures), and CS16 (Problem Solving).
+
+    \item Led instructional labs, developed programming assignments,
+    and supported senior capstone teams across
+    CS189 (Capstone),
+    CS184 (Android),
+    CS24 (C++ Data Structures),
+    and CS16 (Problem Solving).
+
 \end{itemize}
 
-% ==================== TECHNICAL SKILLS ====================
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
 
 \section*{Technical Skills}
 
 \noindent
 \textbf{Programming:}
-Python, C++, Java, Kotlin, MATLAB
+Python, C++, MATLAB, Java, Kotlin
 
 \medskip
 
 \noindent
-\textbf{Robotics \& Simulation:}
-ROS/ROS2, Gazebo, RViz, Unity
+\textbf{Machine Learning \& Signal Processing:}
+PyTorch, NumPy/SciPy, OpenCV,
+Time-Series Modeling, Wearable/Inertial Signal Processing
 
 \medskip
 
 \noindent
-\textbf{Machine Learning \& Vision:}
-PyTorch, OpenCV, CUDA/GPU Acceleration
+\textbf{Control \& Estimation:}
+Model Predictive Control (MPC), Robust MPC,
+Contraction-Based Methods, State Estimation (EKF),
+Sensor Fusion, Motion Planning
 
 \medskip
 
 \noindent
-\textbf{Methods:}
-State Estimation (EKF), Model Predictive Control (MPC), Motion Planning, Sensor Fusion, Spatial Perception
+\textbf{Robotics \& Interactive Systems:}
+ROS/ROS2, Gazebo, RViz, Unity, OpenGL
 
 \medskip
 
@@ -300,37 +523,52 @@ State Estimation (EKF), Model Predictive Control (MPC), Motion Planning, Sensor 
 \textbf{Developer Tools:}
 Git
 
+% ============================================================
+% ACADEMIC SERVICE
+% ============================================================
+
 \section*{Academic Service \& Peer Review}
 
 \noindent
-\textbf{Peer Reviewer, UIST 2024} \\
+\textbf{Peer Reviewer, UIST 2024}
+\\
 \textit{ACM Symposium on User Interface Software and Technology}
 
 \begin{itemize}
-    \item Reviewed submissions on interactive systems, spatial tracking, and interface hardware.
+
+    \item Reviewed submissions on interactive systems,
+    spatial tracking, and interface hardware.
+
 \end{itemize}
 
+% ============================================================
+% OPTIONAL TRANSCRIPT ATTACHMENTS
+% ============================================================
+
 \clearpage
-% === Your regular CV ends right here ===
 
 \ifincludeattachments
 
-    % --- Start of External Documents ---
     \newgeometry{margin=0pt}
 
     \begin{landscape}
-    \thispagestyle{empty} % Removes page numbers and headers
-
-    \noindent
-    \centering
-    \includegraphics[width=\linewidth, height=\textheight, keepaspectratio]{transcripts/kgp_transcript_full_TWCTPV1N.jpg}
+        \thispagestyle{empty}
+        \noindent
+        \centering
+        \includegraphics[
+            width=\linewidth,
+            height=\textheight,
+            keepaspectratio
+        ]{transcripts/kgp_transcript_full_TWCTPV1N.jpg}
     \end{landscape}
-    
-    \clearpage          % <--- Add this to cleanly push to a new page
-    \restoregeometry    % Restores regular margins for the next document
 
-    % Inserts all pages of your transcript cleanly
-    \includepdf[pages=-]{transcripts/official_transcript_ucsb_TWCTPV1N.pdf}
-\fi 
+    \clearpage
+    \restoregeometry
+
+    \includepdf[
+        pages=-
+    ]{transcripts/official_transcript_ucsb_TWCTPV1N.pdf}
+
+\fi
 
 \end{document}

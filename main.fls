@@ -168,7 +168,6 @@ INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/satyam/.miktex/texmfs/install/fonts/tfm/public/cm/cmr8.tfm
 INPUT /home/satyam/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /home/satyam/.miktex/texmfs/install/fonts/enc/dvips/fontawesome5/fa5free1.enc
@@ -197,5 +196,3 @@ INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-INPUT /home/satyam/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb
